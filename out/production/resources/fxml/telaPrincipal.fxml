@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.Controller">
+    <children>
+        <MenuBar fx:id="menuBar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu fx:id="inserirPrincipal" mnemonicParsing="false" onAction="#mudarTelaInserir" text="Inserir">
+                    <items>
+                        <MenuItem fx:id="inserirEvento" mnemonicParsing="false" text="Inserir Evento" />
+                    </items>
+                </Menu>
+                <Menu fx:id="consultarPrincipal" mnemonicParsing="false" onAction="#mudarTelaConsultar" text="Consultar">
+                    <items>
+                        <MenuItem fx:id="consultarTimeLine" mnemonicParsing="false" text="Linha do tempo" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="botaoGrandeInserir" layoutX="36.0" layoutY="83.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="139.0" onAction="#mudarTelaInserir" text="INSERIR" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="83.0" />
+        <Button fx:id="botaoGrandeConsultar" layoutX="225.0" layoutY="83.0" mnemonicParsing="false" prefHeight="114.0" prefWidth="139.0" onAction="#mudarTelaConsultar" text="CONSULTAR" AnchorPane.bottomAnchor="63.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="83.0" />
+    </children>
+</AnchorPane>
